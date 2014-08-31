@@ -1,0 +1,21 @@
+.row
+  .col-lg-6.col-lg-offset-3
+    = form_tag do
+      .row
+        .col-lg-12
+          = label_tag :email
+          = text_field_tag :email, '', class: 'form-control',
+            placeholder: "Email address"
+
+      .row
+        .col-lg-12
+          = label_tag :password
+          = password_field_tag :password, '', class: 'form-control',
+            placeholder: "Password"
+
+      .top20
+        = submit_tag "Sign in", class: "btn btn-primary btn-lg"
+
+      .top20
+        Don't have an account? Sign up
+        = link_to "here", "#"
